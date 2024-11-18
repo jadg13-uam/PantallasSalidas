@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsInforme" targetNamespace="http://tempuri.org/DsInforme.xsd" xmlns:mstns="http://tempuri.org/DsInforme.xsd" xmlns="http://tempuri.org/DsInforme.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsInforme" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DsInforme" msprop:Generator_DataSetName="DsInforme">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EstudianteDT" msprop:Generator_RowEvHandlerName="EstudianteDTRowChangeEventHandler" msprop:Generator_RowDeletedName="EstudianteDTRowDeleted" msprop:Generator_RowDeletingName="EstudianteDTRowDeleting" msprop:Generator_RowEvArgName="EstudianteDTRowChangeEvent" msprop:Generator_TablePropName="EstudianteDT" msprop:Generator_RowChangedName="EstudianteDTRowChanged" msprop:Generator_RowChangingName="EstudianteDTRowChanging" msprop:Generator_TableClassName="EstudianteDTDataTable" msprop:Generator_RowClassName="EstudianteDTRow" msprop:Generator_TableVarName="tableEstudianteDT" msprop:Generator_UserTableName="EstudianteDT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CIF" msprop:Generator_ColumnPropNameInRow="CIF" msprop:Generator_ColumnPropNameInTable="CIFColumn" msprop:Generator_ColumnVarNameInTable="columnCIF" msprop:Generator_UserColumnName="CIF" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" msprop:Generator_ColumnPropNameInRow="Nombres" msprop:Generator_ColumnPropNameInTable="NombresColumn" msprop:Generator_ColumnVarNameInTable="columnNombres" msprop:Generator_UserColumnName="Nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellidos" msprop:Generator_ColumnPropNameInRow="Apellidos" msprop:Generator_ColumnPropNameInTable="ApellidosColumn" msprop:Generator_ColumnVarNameInTable="columnApellidos" msprop:Generator_UserColumnName="Apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="Carrera" msprop:Generator_ColumnPropNameInRow="Carrera" msprop:Generator_ColumnPropNameInTable="CarreraColumn" msprop:Generator_ColumnVarNameInTable="columnCarrera" msprop:Generator_UserColumnName="Carrera" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_UserColumnName="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNac" msprop:Generator_ColumnPropNameInRow="FechaNac" msprop:Generator_ColumnPropNameInTable="FechaNacColumn" msprop:Generator_ColumnVarNameInTable="columnFechaNac" msprop:Generator_UserColumnName="FechaNac" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DocenteDT" msprop:Generator_RowEvHandlerName="DocenteDTRowChangeEventHandler" msprop:Generator_RowDeletedName="DocenteDTRowDeleted" msprop:Generator_RowDeletingName="DocenteDTRowDeleting" msprop:Generator_RowEvArgName="DocenteDTRowChangeEvent" msprop:Generator_TablePropName="DocenteDT" msprop:Generator_RowChangedName="DocenteDTRowChanged" msprop:Generator_RowChangingName="DocenteDTRowChanging" msprop:Generator_TableClassName="DocenteDTDataTable" msprop:Generator_RowClassName="DocenteDTRow" msprop:Generator_TableVarName="tableDocenteDT" msprop:Generator_UserTableName="DocenteDT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CIF" msprop:Generator_ColumnPropNameInRow="CIF" msprop:Generator_ColumnPropNameInTable="CIFColumn" msprop:Generator_ColumnVarNameInTable="columnCIF" msprop:Generator_UserColumnName="CIF" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" msprop:Generator_ColumnPropNameInRow="Nombres" msprop:Generator_ColumnPropNameInTable="NombresColumn" msprop:Generator_ColumnVarNameInTable="columnNombres" msprop:Generator_UserColumnName="Nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellidos" msprop:Generator_ColumnPropNameInRow="Apellidos" msprop:Generator_ColumnPropNameInTable="ApellidosColumn" msprop:Generator_ColumnVarNameInTable="columnApellidos" msprop:Generator_UserColumnName="Apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_UserColumnName="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNac" msprop:Generator_ColumnPropNameInRow="FechaNac" msprop:Generator_ColumnPropNameInTable="FechaNacColumn" msprop:Generator_ColumnVarNameInTable="columnFechaNac" msprop:Generator_UserColumnName="FechaNac" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
