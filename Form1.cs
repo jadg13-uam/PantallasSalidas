@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using PantallasSalidas.Modelo;
+using PantallasSalidas.Reportes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +14,12 @@ using System.Windows.Forms;
 namespace PantallasSalidas
 {
    public partial class Form1 : Form
+
    {
+     List <Estudiante> estudiantes = new List <Estudiante> ();
+
+
+   
       public Form1()
       {
          InitializeComponent();
@@ -62,5 +70,26 @@ namespace PantallasSalidas
          }
          
       }
+
+      private void reporte1ToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         ReportDataSource reportDataSource = new ReportDataSource("DsDatos", estudiantes);
+         FrmVistaPrevia frm = new FrmVistaPrevia();
+         frm.reportViewer1.LocalReport.DataSources.Clear();
+         frm.reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+         frm.reportViewer1.LocalReport.ReportEmbeddedResource = "PantallasSalidas.Reportes.RptInforme1.rdlc";
+         frm.reportViewer1.Refresh();
+         frm.Show();
+      }
+
+      private void Form1_Load(object sender, EventArgs e)
+      {
+         estudiantes.Add(new Estudiante("2302", "Oscar", "Alvarado", "ISI", "oscar@gmail.com", new DateTime(2004, 03, 08)));
+         estudiantes.Add(new Estudiante("2335", "Oscar", "Arnueroo", "ISI", "oscar@gmail.com", new DateTime(2004, 03, 08)));
+         estudiantes.Add(new Estudiante("23366", "Camilo", "Furai", "ISI", "oscar@gmail.com", new DateTime(2004, 03, 08)));
+
+       
+      }
+
    }
 }

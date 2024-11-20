@@ -124,4 +124,7 @@
   <data name="los_10_sonidos_principales_del_perro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\los-10-sonidos-principales-del-perro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="miIcono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\miIcono.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

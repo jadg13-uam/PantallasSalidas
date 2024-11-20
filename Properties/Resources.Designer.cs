@@ -79,5 +79,15 @@ namespace PantallasSalidas.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon miIcono {
+            get {
+                object obj = ResourceManager.GetObject("miIcono", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
